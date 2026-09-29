@@ -30,6 +30,7 @@ Load policy only when its concern is relevant. Do not preload all of it.
 | --- | --- |
 | Task context, authority, self-authorization | [`docs/agent-guidance.md`](docs/agent-guidance.md) |
 | Ownership and cross-repository boundaries | [`docs/repository-ownership.md`](docs/repository-ownership.md) |
+| Platform content, releases, snapshots, Bastion builds across repositories | [`docs/content-release-contract.md`](docs/content-release-contract.md) |
 | Issue readiness, verifiable outcomes, implementation preflight, boundary-migration continuity | [`docs/issue-readiness.md`](docs/issue-readiness.md) |
 | Design choices, persistent mechanisms, comments | [`docs/engineering-quality.md`](docs/engineering-quality.md) |
 | Tests, fixtures, expected results | [`docs/testing-policy.md`](docs/testing-policy.md) |
