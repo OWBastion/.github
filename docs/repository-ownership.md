@@ -8,6 +8,7 @@ Confirm current ownership in the repository's live guidance before making a cros
 | Business metadata, identities, submissions, evidence, review, grants, Portal/admin behavior, and platform APIs | `OWBastion/owbastion.com` |
 | QQ ingress, channel normalization, commands/replies, deduplication, and notifications | `OWBastion/qqbot` |
 | Screenshot recognition evidence, confidence/warnings, and OCR model lifecycle | `OWBastion/ocrkit` |
+| OCR training/evaluation evidence, labels, regression fixtures, and dataset provenance | `OWBastion/ocrkit-datasets` |
 | Stable organization policy and routing | `OWBastion/.github` |
 | Reusable internal agent procedures and discovery metadata | `OWBastion/.agents` |
 | Public, portable Overwatch and Workshop skills | `OWBastion/overwatch-ai-skills` |
