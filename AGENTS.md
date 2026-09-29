@@ -16,6 +16,7 @@ Confirm current ownership in live guidance before substantial work; see [reposit
 | Business metadata, identities, submissions, evidence, review, grants, Portal/admin, platform APIs | `owbastion.com` |
 | QQ ingress, channel normalization, commands/replies, deduplication, notifications | `qqbot` |
 | Screenshot recognition evidence, confidence/warnings, OCR model lifecycle | `ocrkit` |
+| OCR training/evaluation evidence, labels, regression fixtures, and dataset provenance | `ocrkit-datasets` |
 | Stable organization policy and routing | `.github` |
 | Reusable internal agent procedures | `.agents` |
 | Public portable Overwatch/Workshop skills | `overwatch-ai-skills` |
