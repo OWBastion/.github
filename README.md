@@ -1,25 +1,18 @@
 # OWBastion organization governance
 
-This repository is the canonical owner of stable organization-wide engineering policy and repository routing. It defines shared boundaries; owning repositories remain authoritative for product behavior, domain contracts, implementation details, and mutable status.
+This repository owns stable organization-wide engineering policy and repository routing. Owning repositories remain authoritative for product behavior, domain contracts, implementation, and mutable status.
 
-## Policy routing
-
-| Concern | Read |
-| --- | --- |
-| Task context, authority, and ownership | [Agent guidance](docs/agent-guidance.md), [repository ownership](docs/repository-ownership.md) |
-| Design choices and persistent mechanisms | [Engineering quality](docs/engineering-quality.md) |
-| Tests, fixtures, and expected results | [Testing policy](docs/testing-policy.md) |
-| Independent evidence and acceptance | [Verification and acceptance](docs/verification-and-acceptance.md) |
-| Simplification and removal | [Entropy policy](docs/entropy-policy.md) |
-| Commit, pull request, and default-branch boundaries | [PR delivery](docs/pr-delivery.md) |
-
-Load only the guidance relevant to the task. Repository `AGENTS.md` files route here and retain their local ownership, domain contracts, risk routing, and validation commands.
+- [Workspace agent routing](AGENTS.md): entry point routing agents to the right repository, policy, or skill.
+- [Claude Code entry point](CLAUDE.md): imports `AGENTS.md` and adds Claude-specific guidance. Claude Code reads `CLAUDE.md`, so the workspace root needs a `CLAUDE.md` importing its `AGENTS.md` and `@.github/CLAUDE.md`.
+- [Documentation index](docs/README.md): all policy documents.
 
 ## Ownership boundaries
 
 - `.github` owns durable organization policy and routing.
 - `.agents` owns reusable internal agent procedures and discovery metadata.
 - `overwatch-ai-skills` owns public, portable Overwatch and Workshop skills.
-- Product repositories own their respective behavior, data, contracts, and release state.
+- Product repositories own their behavior, data, contracts, and release state.
 
-Mutable issue state, current versions, capability inventories, model inventories, and rollout status belong in their live owner, not durable policy.
+Mutable issue state, versions, capability inventories, model inventories, and rollout status belong in their live owner, not durable policy.
+
+When editing organization guidance, keep repository-specific contracts with their owners and do not create a second policy store in `.agents` or `overwatch-ai-skills`.
