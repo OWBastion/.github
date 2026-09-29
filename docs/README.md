@@ -4,7 +4,6 @@ Progressive-disclosure index for organization-wide durable policy. Load only wha
 
 - [Agent guidance](agent-guidance.md) — task context, authority, self-authorization.
 - [Repository ownership](repository-ownership.md) — who owns what across repositories.
-- [Content publishing and build contract](content-release-contract.md) — platform/Bastion boundary for content releases and builds.
 - [Issue readiness](issue-readiness.md) — verifiable outcomes, preflight, boundary-migration continuity.
 - [Engineering quality](engineering-quality.md) — design admission and simplicity.
 - [Testing policy](testing-policy.md) — what tests protect and where expectations come from.

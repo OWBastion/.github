@@ -16,4 +16,4 @@ For Workshop development, `workshop-rs` owns canonical Workshop semantics and AP
 
 Change authoritative contracts at their owner. Integrate consumers in their own repositories and verify the resulting boundary. Resolve ownership changes explicitly before moving or duplicating responsibility.
 
-For platform-managed content and Bastion builds, follow [content publishing and build contract](content-release-contract.md).
+The platform/Bastion content and build boundary is owned by `Bastion` (`docs/agents/ecosystem-platform-boundary.md`) and `owbastion.com` (`docs/product-rules/integrations-and-workflows.md`); resolve it there rather than from organization policy.
