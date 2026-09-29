@@ -9,3 +9,5 @@ Use clear ownership and local control flow. Add layers or extension points only 
 Correctness, accepted ownership, and domain constraints take priority over implementation convenience. If meeting the request requires a new product behavior, public contract, security boundary, compatibility policy, or cross-repository ownership decision, route that decision to its owner before implementing it.
 
 Keep durable documentation stable. Versions, issue state, capability counts, rollout status, and other changing inventories remain in their current authoritative sources.
+
+Express responsibility and behavior through structure, naming, types, and control flow. Explanatory comments must not compensate for unclear structure; keep them for durable external constraints, non-obvious invariants, compatibility reasons, provenance, or safety/performance rationale.
