@@ -37,7 +37,10 @@ Load policy only when its concern is relevant. Do not preload all of it.
 | Simplification, deletion, duplicate truth | [`docs/entropy-policy.md`](docs/entropy-policy.md) |
 | Commit, PR, and default-branch boundaries | [`docs/pr-delivery.md`](docs/pr-delivery.md) |
 | Durable documentation layout, drift audits, guidance and skill authoring | [`docs/documentation.md`](docs/documentation.md) |
-| Workspace skill procedures | `.agents/skills/<name>/SKILL.md`, per [`.agents/README.md`](../.agents/README.md) |
+| Simplification, deletion, duplicate truth (procedure) | `.agents/skills/owbastion-reclaim-entropy/SKILL.md` |
+| Test necessity, stability, duplication review | `.agents/skills/owbastion-test-design-review/SKILL.md` |
+| Independent verification of someone else's material change | `.agents/skills/owbastion-verify-change/SKILL.md` |
+| Other workspace skill procedures | `.agents/skills/<name>/SKILL.md`, per [`.agents/README.md`](../.agents/README.md) |
 
 ## Global invariants
 
