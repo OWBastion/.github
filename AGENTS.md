@@ -29,6 +29,7 @@ Load policy only when its concern is relevant. Do not preload all of it.
 
 | Task concern | Load |
 | --- | --- |
+| Product purpose, success criteria, anti-goals, judging proposals or roadmaps | [`docs/product-goal.md`](docs/product-goal.md) |
 | Task context, authority, self-authorization | [`docs/agent-guidance.md`](docs/agent-guidance.md) |
 | Ownership and cross-repository boundaries | [`docs/repository-ownership.md`](docs/repository-ownership.md) |
 | Issue readiness, verifiable outcomes, implementation preflight, boundary-migration continuity | [`docs/issue-readiness.md`](docs/issue-readiness.md) |
@@ -51,6 +52,7 @@ Load policy only when its concern is relevant. Do not preload all of it.
 - Do not weaken tests, validation, diagnostics, error handling, or accepted contracts to obtain a green result.
 - When replacing or retiring a public or authoritative boundary, verify surviving contracts through the replacement itself ([Issue readiness](docs/issue-readiness.md#contract-continuity-for-boundary-migrations)).
 - Do not add abstractions, state, adapters, or extension points for hypothetical needs.
+- Do not add a system or platform capability the [product goal](docs/product-goal.md) cannot justify; prefer hardening existing mechanisms.
 
 ## When to stop
 
