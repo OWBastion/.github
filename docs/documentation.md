@@ -18,6 +18,10 @@ Keep separate: current durable contracts, decision history, current implementati
 
 A skill's `description` is its activation contract: what it does, when to use it, indirect situations that should still route to it, and what it must not be used for. Skills hold procedure and point to the owning policy rather than copying it. When two skills would activate on the same ordinary prompt, clarify their boundary.
 
+## Lessons and retrospectives
+
+A lessons or retrospective file is a staging area, not a policy store. Promote each recurring lesson to its owner: a check or test when a machine can detect the mistake, otherwise the owning policy, repository guide, or skill. Then remove the entry, and delete the file when it is empty. Why: a lesson that exists only in a lessons file is not loaded when the mistake recurs.
+
 ## Synchronization and drift
 
-A change to supported behavior, a public contract, ownership, or workflow updates the owning documentation in the same change; implementation and review check this explicitly. Periodically compare documentation with current reality (after migrations, ownership changes, or when a contradiction appears) and fix the owning document rather than copying status elsewhere. Restructuring documentation must preserve meaning unless the task explicitly changes the contract.
+A change to supported behavior, a public contract, ownership, or workflow updates the owning documentation in the same change; implementation and review check this explicitly. Search all documentation for statements about the changed behavior, not only the document you expect to own it, because the same claim is often repeated in architecture, format, and interface documents. Periodically compare documentation with current reality (after migrations, ownership changes, or when a contradiction appears) and fix the owning document rather than copying status elsewhere. Restructuring documentation must preserve meaning unless the task explicitly changes the contract.
