@@ -3,6 +3,7 @@
 Progressive-disclosure index for organization-wide durable policy. Load only what the task needs; routing lives in [`../AGENTS.md`](../AGENTS.md).
 
 - [Product goal](product-goal.md) — purpose, success criteria, anti-goals.
+- [Product decisions](product-decisions.md) — how the owner settles recurring product and UX questions.
 - [Agent guidance](agent-guidance.md) — task context, authority, self-authorization.
 - [Repository ownership](repository-ownership.md) — who owns what across repositories.
 - [Issue readiness](issue-readiness.md) — verifiable outcomes, preflight, boundary-migration continuity.
