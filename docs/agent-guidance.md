@@ -16,6 +16,14 @@ For cross-repository work, identify every affected owner. Change authoritative f
 
 Continue reversible, in-scope work without routine confirmation. Follow the owning repository's delivery rules. Get the required authorization before destructive actions, production changes, releases, or other external writes that the task and repository rules do not authorize.
 
+## Orchestrate delegated work
+
+When you split work across agents, write one Issue per independent task with its acceptance criteria, delegate it, and own QA and the PR yourself. Check the result against the acceptance criteria before you merge. Ask a separate agent to review before merge when the user asks for it.
+
+Write Issues for the repository's code-level work only. Do not put owner decisions or local environment state in them. Resolve the owner decision first, then write the Issue. When the user asks to see a draft, show it and wait before you create the Issue. Record dependencies as native Issue relationships.
+
+Why: the delegate has no access to your conversation, and a decision left open in an Issue becomes a guess in the implementation.
+
 ## Write for current models
 
 State the outcome, boundaries, and stop conditions; do not script how a model should think. Omit instructions that compensate for older models: "think step by step", scratchpad or show-your-reasoning requirements, verify-twice rules, fixed step sequences where order does not matter, and rules repeated for emphasis. State a rule once with its reason in its owning document; an always-loaded entry file may summarize it in one line and link there.

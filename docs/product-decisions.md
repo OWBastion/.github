@@ -6,6 +6,7 @@ Decisions the owner has repeatedly made on player-facing and platform design. Ap
 
 - Tell players what happened to them: passed or not, XP gained, title earned. Do not label content with internal states such as "valid run" or "verified" when only verified content can appear.
 - Do not reveal anti-tamper rules, expected values, or detection logic in messages. Tolerate small deviations in validation instead of publishing the threshold.
+- Explain an internal concept (such as a draw-algorithm term) in player language, behind an info icon, or drop it. Players do not know the algorithm.
 - Prefer an icon, color, or tag to repeated explanatory text. Remove units and words that the number or layout already implies.
 
 ## Place a feature by how often it is used
@@ -19,6 +20,13 @@ Decisions the owner has repeatedly made on player-facing and platform design. Ap
 - One fact has one state. Remove intermediate states that no actor can act on or that only record plumbing (for example "uploading", "received").
 - Derive a state from existing facts when possible, such as an end time, instead of storing a second flag.
 - A manual administrator action never depends on automatic state.
+
+## Reduce the operator's work
+
+- Prefer choosing to typing. Offer options, not free input, for bounded values such as expiry or use count.
+- Derive a field from data already entered (a version from a date, a window from an end time) instead of asking again.
+- Design repeated review for bulk action. If confirming 39 items takes 39 × 3 clicks, change the interaction.
+- Separate steps that can fail or run long (review, correction, confirmation, grant) so a timeout in one does not leave the others in doubt.
 
 ## Keep history
 
