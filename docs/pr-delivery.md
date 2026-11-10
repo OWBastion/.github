@@ -2,6 +2,8 @@
 
 Follow the owning repository's `AGENTS.md` and branch rules. Where repository guidance requires a pull request, deliver verified implementation work on a non-default branch and use the PR as the shared review surface. Keep the PR's scope, rationale, acceptance evidence, and check results clear. Do not push implementation commits directly to the default branch or rewrite history unless the user explicitly authorizes it.
 
+Open a PR as ready for review once the work is complete and verified. Use a draft PR only when the work is unfinished.
+
 Handle actionable review findings on the PR. After a review fix, update the affected thread or review record and request follow-up review once the change and its checks are ready. Keep review comments actionable; avoid generic praise or summaries that do not help the author act.
 
 If a change fails independent review twice on the same claim, stop patching that mechanism. Return to the contract and redesign the approach, or report the blocker. Why: repeated local fixes to one flawed mechanism tend to move the defect instead of removing it.
