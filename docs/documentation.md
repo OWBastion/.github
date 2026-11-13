@@ -16,7 +16,7 @@ Keep separate: current durable contracts, decision history, current implementati
 
 `AGENTS.md` carries durable routing, ownership, and invariants; it must not become a manual or copy policy from its owner. Entry files for specific tools import `AGENTS.md` and add only tool-specific guidance.
 
-A skill's `description` is its activation contract: what it does, when to use it, indirect situations that should still route to it, and what it must not be used for. Skills hold procedure and point to the owning policy rather than copying it. When two skills would activate on the same ordinary prompt, clarify their boundary.
+A skill's `description` is its activation contract, visible before its body loads: what it does, when to use it, indirect situations that should still route to it (a dependency bump can be a testing task), and what it must not be used for. Check a new description against natural trigger prompts, indirect ones, and nearby non-triggers. Skills hold procedure and point to the owning policy rather than copying it. When two skills would activate on the same ordinary prompt, clarify their boundary.
 
 ## Lessons and retrospectives
 

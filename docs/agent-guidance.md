@@ -35,7 +35,3 @@ Why: current models reason before acting and adjust effort themselves. Ritual in
 `AGENTS.md` and the policies it routes to stay tool-neutral so any agent (for example Codex or Claude Code) reads the same contract. Guidance that depends on one harness or model family, such as subagent or model-selection features, belongs in that tool's entry file (for example `CLAUDE.md`), which imports `AGENTS.md` and does not restate or override shared policy.
 
 Why: shared policy stays portable, and tool tuning can change with a model release without editing policy.
-
-## Design skill metadata for discovery
-
-A skill's description is an activation surface visible before its body loads. Front-load task shapes, changed artifacts, and failure signals, including indirect contexts (a dependency bump can be a testing task). Check a new description against natural trigger prompts, indirect ones, and nearby non-triggers.
