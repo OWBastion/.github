@@ -33,7 +33,7 @@ Load policy only when its concern is relevant. Do not preload all of it.
 | Player-facing UX, feature placement, lifecycle states, data retention, prototypes | [`docs/product-decisions.md`](docs/product-decisions.md) |
 | Task context, authority, self-authorization | [`docs/agent-guidance.md`](docs/agent-guidance.md) |
 | Ownership and cross-repository boundaries | [`docs/repository-ownership.md`](docs/repository-ownership.md) |
-| Issue readiness, verifiable outcomes, implementation preflight, boundary-migration continuity | [`docs/issue-readiness.md`](docs/issue-readiness.md) |
+| Issue readiness, verifiable outcomes, implementation preflight, rule-change consumer sweep, boundary-migration continuity | [`docs/issue-readiness.md`](docs/issue-readiness.md) |
 | Design choices, persistent mechanisms, comments | [`docs/engineering-quality.md`](docs/engineering-quality.md) |
 | Tests, fixtures, expected results | [`docs/testing-policy.md`](docs/testing-policy.md) |
 | Independent evidence and acceptance | [`docs/verification-and-acceptance.md`](docs/verification-and-acceptance.md) |

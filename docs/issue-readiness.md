@@ -18,6 +18,18 @@ Before changing code in substantive work, compare:
 
 If they materially disagree, report the unresolved product, architecture, compatibility, or ownership decision instead of choosing a design. Also identify the checks that decide completion. When the three align, implement under [engineering quality](engineering-quality.md) and verify under [testing policy](testing-policy.md) and [verification](verification-and-acceptance.md).
 
+## Rule changes and their consumers
+
+A domain rule decides what a Title, Map, Event, Challenge, or other product object means: who holds it, when it is valid, whether it is visible, how it is counted, or which version it belongs to. When a change alters such a rule, the change is not complete until every consumer of the rule is accounted for.
+
+1. Name the rule and its owner. Prefer one shared definition (a query predicate, service method, or contract) that consumers call. If the rule is copied into several filters, extract the shared definition as part of the change instead of patching each copy.
+2. Search for every consumer by the rule's data, not by the file you expect: persistence reads, player, public, and admin views, rankings and counts, equip or permission checks, game and bot exports, notifications, and documentation or changelog statements. Across repositories, use the owner and consumer routing in [agent guidance](agent-guidance.md).
+3. Settle each consumer as exactly one of: **updated** in this change, **unchanged by intent** with the reason, or **routed** to a named owner or Issue. Silence is not a state.
+4. Name the consumers checked and their state in the PR description. The independent check ([verification](verification-and-acceptance.md)) compares that list with its own search; a consumer it finds that the list lacks fails the change.
+5. Add a test at the shared definition, and for a consumer only when it has its own filter. A test of one consumer does not prove the others.
+
+Why: a consumer that was not found keeps the old rule, and the product then shows two answers to one question. This applies equally to Maps, Events, and any new domain object.
+
 ## Contract continuity for boundary migrations
 
 When a change replaces, hides, or retires a public or authoritative boundary (API, schema, protocol, generated contract), every capability of the previous contract must be exactly one of:

@@ -6,7 +6,7 @@ Progressive-disclosure index for organization-wide durable policy. Load only wha
 - [Product decisions](product-decisions.md) — how the owner settles recurring product and UX questions.
 - [Agent guidance](agent-guidance.md) — task context, authority, self-authorization.
 - [Repository ownership](repository-ownership.md) — who owns what across repositories.
-- [Issue readiness](issue-readiness.md) — verifiable outcomes, preflight, boundary-migration continuity.
+- [Issue readiness](issue-readiness.md) — verifiable outcomes, preflight, rule-change consumer sweep, boundary-migration continuity.
 - [Engineering quality](engineering-quality.md) — design admission and simplicity.
 - [Testing policy](testing-policy.md) — what tests protect and where expectations come from.
 - [Verification and acceptance](verification-and-acceptance.md) — independent evidence.
