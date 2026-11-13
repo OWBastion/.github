@@ -6,4 +6,4 @@ Searches, scanners, dead-code reports, and local reference counts produce candid
 
 For internal behavior with no surviving contract dependency, prefer removing redundant abstractions, duplicate configuration, stale fallbacks, abandoned extension points, and migration residue. Preserve observable behavior and independent verification evidence for behavior-preserving simplification.
 
-Changes to public or persisted behavior, privacy/security controls, compatibility, or ownership require the responsible owner's decision. When replacing or retiring an authoritative boundary, account for each accepted capability that remains, an explicitly approved removal or behavior change, or a transfer to a named owner and boundary. Tests through a retired or compatibility-only path do not prove the replacement complete.
+Changes to public or persisted behavior, privacy/security controls, compatibility, or ownership require the responsible owner's decision. When replacing or retiring an authoritative boundary, apply [contract continuity](issue-readiness.md#contract-continuity-for-boundary-migrations).

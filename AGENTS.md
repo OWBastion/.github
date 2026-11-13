@@ -35,15 +35,13 @@ Load policy only when its concern is relevant. Do not preload all of it.
 | Ownership and cross-repository boundaries | [`docs/repository-ownership.md`](docs/repository-ownership.md) |
 | Issue readiness, verifiable outcomes, implementation preflight, rule-change consumer sweep, boundary-migration continuity | [`docs/issue-readiness.md`](docs/issue-readiness.md) |
 | Design choices, persistent mechanisms, comments | [`docs/engineering-quality.md`](docs/engineering-quality.md) |
-| Tests, fixtures, expected results | [`docs/testing-policy.md`](docs/testing-policy.md) |
-| Independent evidence and acceptance | [`docs/verification-and-acceptance.md`](docs/verification-and-acceptance.md) |
-| Simplification, deletion, duplicate truth | [`docs/entropy-policy.md`](docs/entropy-policy.md) |
+| Tests, fixtures, expected results | [`docs/testing-policy.md`](docs/testing-policy.md); review procedure in skill `owbastion-test-design-review` |
+| Independent evidence and acceptance | [`docs/verification-and-acceptance.md`](docs/verification-and-acceptance.md); for someone else's material change, skill `owbastion-verify-change` |
+| Simplification, deletion, duplicate truth | [`docs/entropy-policy.md`](docs/entropy-policy.md); procedure in skill `owbastion-reclaim-entropy` |
 | Commit, PR, and default-branch boundaries | [`docs/pr-delivery.md`](docs/pr-delivery.md) |
 | Durable documentation layout, drift audits, guidance and skill authoring | [`docs/documentation.md`](docs/documentation.md) |
-| Simplification, deletion, duplicate truth (procedure) | `.agents/skills/owbastion-reclaim-entropy/SKILL.md` |
-| Test necessity, stability, duplication review | `.agents/skills/owbastion-test-design-review/SKILL.md` |
-| Independent verification of someone else's material change | `.agents/skills/owbastion-verify-change/SKILL.md` |
-| Other workspace skill procedures | `.agents/skills/<name>/SKILL.md`, per [`.agents/README.md`](../.agents/README.md) |
+
+Skills live at `.agents/skills/<name>/SKILL.md`; [`.agents/README.md`](../.agents/README.md) indexes them.
 
 ## Global invariants
 
