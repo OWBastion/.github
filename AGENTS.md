@@ -38,7 +38,7 @@ Load policy only when its concern is relevant. Do not preload all of it.
 | Tests, fixtures, expected results | [`docs/testing-policy.md`](docs/testing-policy.md); review procedure in skill `owbastion-test-design-review` |
 | Independent evidence and acceptance | [`docs/verification-and-acceptance.md`](docs/verification-and-acceptance.md); for someone else's material change, skill `owbastion-verify-change` |
 | Simplification, deletion, duplicate truth | [`docs/entropy-policy.md`](docs/entropy-policy.md); procedure in skill `owbastion-reclaim-entropy` |
-| Commit, PR, and default-branch boundaries | [`docs/pr-delivery.md`](docs/pr-delivery.md) |
+| Delivery route (PR or direct push), commit, and default-branch boundaries | [`docs/pr-delivery.md`](docs/pr-delivery.md) |
 | Durable documentation layout, drift audits, guidance and skill authoring | [`docs/documentation.md`](docs/documentation.md) |
 
 Skills live at `.agents/skills/<name>/SKILL.md`; [`.agents/README.md`](../.agents/README.md) indexes them.
