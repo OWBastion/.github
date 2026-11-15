@@ -1,6 +1,13 @@
 # Pull request delivery
 
-Follow the owning repository's `AGENTS.md` and branch rules. Where repository guidance requires a pull request, deliver verified implementation work on a non-default branch and use the PR as the shared review surface. Keep the PR's scope, rationale, acceptance evidence, and check results clear. Do not push implementation commits directly to the default branch or rewrite history unless the user explicitly authorizes it.
+Follow the owning repository's `AGENTS.md` and branch rules. Deliver verified implementation work by one of two routes, and choose the route for each change:
+
+- **PR from a non-default branch** when the change alters a domain rule, product behavior, a public contract, a schema or migration, authorization, secrets, CI, or deployment configuration; needs [independent verification](verification-and-acceptance.md); belongs to a cross-repository change; or targets a repository whose rules require a PR. The PR is the shared review surface. Keep its scope, rationale, acceptance evidence, and check results clear.
+- **Direct push to the default branch** when the change is small, self-contained, verified locally, and needs no independent review.
+
+When the route is unclear, open a PR. A direct push is also a merge, and in a repository that deploys from its default branch it is also a deployment; it needs the authorization that the owning repository requires for those steps.
+
+A `pre-push` hook gates every direct push to the default branch. The push passes only as a fast-forward of the clean, checked-out commit, and only when the repository's `.githooks-local/pre-push-main` gate passes. A repository without that gate accepts changes only through a PR. When the hook blocks, fix the cause or open a PR. Never bypass the hook, force-push the default branch, or rewrite history unless the user explicitly authorizes it.
 
 Open a PR as ready for review once the work is complete and verified. Use a draft PR only when the work is unfinished.
 

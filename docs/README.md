@@ -11,5 +11,5 @@ Progressive-disclosure index for organization-wide durable policy. Load only wha
 - [Testing policy](testing-policy.md) — what tests protect and where expectations come from.
 - [Verification and acceptance](verification-and-acceptance.md) — independent evidence.
 - [Entropy policy](entropy-policy.md) — simplification and removal.
-- [PR delivery](pr-delivery.md) — commit, PR, and default-branch boundaries.
+- [PR delivery](pr-delivery.md) — delivery route (PR or direct push), commit, and default-branch boundaries.
 - [Documentation management](documentation.md) — layout, drift, guidance and skill authoring.
