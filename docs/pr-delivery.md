@@ -7,7 +7,7 @@ Follow the owning repository's `AGENTS.md` and branch rules. Deliver verified im
 
 When the route is unclear, open a PR. A direct push is also a merge, and in a repository that deploys from its default branch it is also a deployment; it needs the authorization that the owning repository requires for those steps.
 
-A `pre-push` hook gates every direct push to the default branch. The push passes only as a fast-forward of the clean, checked-out commit, and only when the repository's `.githooks-local/pre-push-main` gate passes. A repository without that gate accepts changes only through a PR. When the hook blocks, fix the cause or open a PR. Never bypass the hook, force-push the default branch, or rewrite history unless the user explicitly authorizes it.
+A `pre-push` hook gates every direct push to the default branch. Its rules are the same in every repository: the push is a fast-forward of the clean, checked-out commit, and the new commits hold no merge commit and no `fixup!`, `squash!`, `amend!`, or `WIP` commit. A repository that declares `.githooks-local/pre-push-main` also runs that gate. When the hook blocks, fix the cause or open a PR. Never bypass the hook, force-push the default branch, or rewrite history unless the user explicitly authorizes it.
 
 Open a PR as ready for review once the work is complete and verified. Use a draft PR only when the work is unfinished.
 
